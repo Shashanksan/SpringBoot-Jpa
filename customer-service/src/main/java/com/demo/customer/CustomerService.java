@@ -9,7 +9,8 @@ public class CustomerService {
 
     private final CustomerRepository repo;
 
-    public CustomerService(CustomerRepository repo) { this.repo = repo; }
+    public CustomerService(CustomerRepository repo) 
+    { this.repo = repo; }
 
     @Transactional
     public Customer create(Customer c) {

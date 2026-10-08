@@ -15,7 +15,8 @@ public class OrderController {
 
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
-    public Order create(@Valid @RequestBody Order o) { return service.create(o); }
+    public Order create(@Valid @RequestBody Order o)
+    { return service.create(o); }
 
     @GetMapping
     public List<Order> all() { return service.findAll(); }
